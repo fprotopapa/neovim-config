@@ -20,7 +20,7 @@ filetype plugin indent on
 vnoremap <C-C> "*y
 vnoremap <C-V> "*p
 noremap <C-Q> :set invnumber invrelativenumber<CR>
-
+nnoremap <F3> :set hlsearch!<CR>
 nmap <F8> :TagbarToggle<CR>
 nnoremap <C-F> :NERDTreeFocus<CR>
 nnoremap <F1> :NERDTreeToggle<CR>
@@ -57,6 +57,8 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/vivien/vim-linux-coding-style' " Linux Kernel Coding Style
 
 call plug#end()
+
+set tags=./tags;$HOME
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
